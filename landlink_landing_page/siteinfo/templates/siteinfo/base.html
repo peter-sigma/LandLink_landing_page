@@ -1,0 +1,56 @@
+{% load static %}
+
+<style></style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LandLink{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static '/account/styles.css' %}">
+    <link rel="stylesheet" href="{% static '/account/style.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>LandLink</h1>
+            {% block links %}{% endblock %}
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content container-fluid mt-4">
+        {% block content %}{% endblock %}
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 LandLink. All rights reserved.</p>
+                </div>
+                <div class="col-md-8 offset-md-2 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="">Home</a></li>
+                        <li class="list-inline-item"><a href="">About</a></li>
+                        <li class="list-inline-item"><a href="">Login</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/peter-sigma/LandLink_kenya" >GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
