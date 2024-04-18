@@ -70,3 +70,10 @@ header {
 .green {
     color:green
 }
+.cover-image {
+    width: 96%; /* Set the width to fill 96% of the screen width */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
