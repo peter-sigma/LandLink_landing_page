@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e$0y*%h8lti429-@v!waa$1ey_^^-l)z^dhzu_&c%*%x6s+fl@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.122.0.1', '127.0.0.1']
+ALLOWED_HOSTS = ['10.122.0.1', '127.0.0.1', 'touchyteky.tech','www.touchyteky.tech']
 
 
 # Application definition
@@ -123,8 +123,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    '/home/ubuntu/LandLink_landing_page/landlink_landing_page/static',
+    os.path.join(BASE_DIR, 'siteinfo', 'static'),
 ]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
