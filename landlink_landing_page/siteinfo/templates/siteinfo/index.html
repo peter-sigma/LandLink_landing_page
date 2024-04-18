@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandLink - Your One-Stop Solution for Land Transactions</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <!-- Large cover image (You can replace 'image.jpg' with the path to your cover image) -->
-            <img src="{% static 'image.jpg' %}" alt="Cover Image" class="cover-image">
-            <!-- Name of your project -->
-            <h1 class="project-name">LandLink</h1>
-            <!-- One-line phrase/description -->
-            <p class="project-description">Your One-Stop Solution for Land Transactions</p>
-            <!-- Navigation elements -->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
-            </nav>
-            <!-- Button to navigate to the deployed project application -->
-            <a href="#" class="btn btn-primary">Explore LandLink</a>
-        </div>
-    </header>
+{% extends 'siteinfo/base.html' %}
+{% load static %}
 
+{% block title %}Home - LandLink{% endblock %}
+
+{% block content %}
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2>About LandLink</h2>
             <!-- Your content about LandLink -->
+            <p>
+                LandLink is your one-stop solution for all your land-related needs.
+                We offer a wide range of services including buying, selling, and legal assistance.
+            </p>
+            <p>
+                Explore our website to learn more about our services and how we can assist you in your land transactions.
+            </p>
+            <p class='text-center'>
+                Visit our <a href="#login">Login</a> page to access your account.
+            </p>
         </div>
     </section>
 
@@ -42,20 +27,9 @@
         <div class="container">
             <h2>Login to Your Account</h2>
             <!-- Your content about login -->
+            <p>
+                Log in to your account to access exclusive features and services.
+            </p>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <!-- Footer content -->
-            <p>&copy; 2024 LandLink. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% endblock %}
